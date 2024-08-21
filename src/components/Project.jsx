@@ -1,4 +1,5 @@
 import Lonleyshop from "./Lonelyshop.jsx"
+import Personalsite from "./Personalsite.jsx"
 
 export default function Project() {
   return (
@@ -8,8 +9,9 @@ export default function Project() {
        
     </div>
 
-    <div className="flex justify-center mt-10">
+    <div className="flex flex-col justify-center items-center mt-10">
          <Lonleyshop/>
+         <Personalsite/>
     </div>
     </div>
   )
