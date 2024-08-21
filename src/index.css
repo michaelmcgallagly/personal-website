@@ -7,5 +7,10 @@ h1, h2, h3 .bold{
   font-family: 'New Amsterdam' sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+
 
 
