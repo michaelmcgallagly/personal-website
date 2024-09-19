@@ -1,5 +1,6 @@
-import Lonleyshop from "./Lonelyshop.jsx"
-import Personalsite from "./Personalsite.jsx"
+
+import projects from "../data/projects.js"
+import ProjectCard from "./ProjectCard.jsx"
 
 export default function Project() {
   return (
@@ -10,8 +11,16 @@ export default function Project() {
     </div>
 
     <div className="flex flex-col justify-center items-center mt-10">
-         <Lonleyshop/>
-         <Personalsite/>
+         {projects.map((project, index)=>(
+          <ProjectCard
+          key={index}
+          logo={project.logo}
+          title={project.title}
+          description={project.description}
+          siteUrl={project.siteUrl}
+          codeUrl={project.codeUrl}
+          />
+         ))}
     </div>
     </div>
   )
